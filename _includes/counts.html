@@ -1,0 +1,23 @@
+<div class="counts">
+  <span itemprop="keywords">
+
+      {% for post in site.posts %}
+          {% if post.tags contains "leetcode" %}
+              {% capture _ %}{% increment leet_count %}{% endcapture %}
+          {% else %}
+              {% capture _ %}{% increment things_count %}{% endcapture %}
+          {% endif %}
+      {% endfor %}
+      <a class="tag" href="/tags#leetcode">Leetcode - {{ leet_count }}</a>
+      <span>,</span>
+      <a class="tag" href="/tags#things-like-that">Other Stuff - {{ things_count }}</a>
+  </span>
+</div>
+
+
+<!-- {% assign leet_count = 0 %}
+{% for post in site.posts %}
+    {% if post.tags contains "leetcode" %}
+      {% increment leet_count %}
+    {% endif %}
+{% endfor %} -->

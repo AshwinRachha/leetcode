@@ -1,0 +1,21 @@
+- title: Home
+  url: /
+  external: false
+
+- title: Projects
+  url: /projects
+  external: false
+
+- title: Blog
+  url: /blog
+  external: false
+
+- title: Resume
+  url: /Chris_Nunes_Resume.pdf
+  external: true
+
+
+# Example:
+# - title: github
+#   url: https://github.com/piharpi/jekyll-klise
+#   external: true
